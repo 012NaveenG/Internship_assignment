@@ -65,7 +65,7 @@ console.log(typeof(alldata))
 })
 server.post('/data', (req, res) => {
     const { name, img, summary} = req.body
-    // createNewData( name, img, summary)
+    createNewData( name, img, summary)
     // deleteData(name)
     // updateData(name,summary)
     res.redirect('/')
