@@ -56,13 +56,7 @@ server.get('/', (req, res) => {
 
 })
 
-server.get('/alldata',(req,res)=>{
-   const alldata = readData()
-//    alldata.forEach(element => {
-//     res.send(element)
-//    });
-console.log(typeof(alldata))
-})
+server.get('/alldata',(req,res)=> readData())
 server.post('/data', (req, res) => {
     const { name, img, summary} = req.body
     createNewData( name, img, summary)
